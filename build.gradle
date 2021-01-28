@@ -27,5 +27,9 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok') // 프로젝트에 롬복을 추가
+    compile('org.springframework.boot:spring-boot-starter-data-jpa') // Spring Data JPA 추상화 라이브러리 (p.86)
+    compile('org.springframework.boot:spring-boot-starter-mustache') // Mustache 템플릿 엔진. (p.130)
+    compile('com.h2database:h2')    // 인메모리 관계형 DB (p.86)
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
