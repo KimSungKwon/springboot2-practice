@@ -1,5 +1,5 @@
 /*
-    API구현. 주소 맵핑, Service 영역으로 dto를 보냄
+    API구현. 주소 맵핑, Service에서 만든 메소드를 컨트롤러가 사용
  */
 
 package example.org.springboot.web;
@@ -30,5 +30,11 @@ public class PostsApiController {
     @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById(@PathVariable Long id) {
         return postsService.findById(id);
+    }
+
+    @DeleteMapping("/api/v1/posts/{id}")
+    public Long delete(@PathVariable Long id) {
+        postsService.delete(id);
+        return id;
     }
 }
