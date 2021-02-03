@@ -1,5 +1,6 @@
 /*
     API구현. 주소 맵핑, Service에서 만든 메소드를 컨트롤러가 사용
+    mustache 에서 사용할 수 있게함
  */
 
 package example.org.springboot.web;
