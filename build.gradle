@@ -34,4 +34,5 @@ dependencies {
     compile('org.springframework.session:spring-session-jdbc')  // spring-session-jdbc (p.203)
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.security:spring-security-test')    // 스프링 시큐리티 테스트를 위한 여러 도구 지원 (p.215)
 }
